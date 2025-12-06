@@ -1,16 +1,31 @@
-# React + Vite
+# 💧 Interactive Water Distortion (React + WebGL)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance WebGL liquid distortion effect ported to **React** and **Vite**. This project uses custom GLSL shaders to create interactive water-like ripples and surface distortions on images, controlled via a GUI.
 
-Currently, two official plugins are available:
+![Project Preview](https://cdn.shopify.com/s/files/1/0185/5999/1872/files/hero--desktop.webp?v=1759340146)
+*(The default image used in the project)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## React Compiler
+* **Framework:** [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Graphics:** Raw WebGL (Custom Shaders)
+* **Controls:** [lil-gui](https://lil-gui.georgealways.com/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+* **Custom Shaders:** Implements `snoise` (Simplex Noise) and surface distortion algorithms in GLSL.
+* **Interactive Controls:** Real-time adjustment of effect parameters (Scale, Illumination, Distortion strength) using a floating GUI.
+* **Image Upload:** Users can upload their own local images to test the effect immediately.
+* **Responsive:** Canvas automatically resizes and adjusts the aspect ratio to fit the screen while maintaining image cover.
+* **React Architecture:** Clean separation of concerns with shaders isolated from the component logic.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Installation & Setup
+
+### 1. Prerequisites
+Ensure you have Node.js installed.
+
+### 2. Create Project (if not done)
+```bash
+npm create vite@latest water-distortion -- --template react
+cd water-distortion
