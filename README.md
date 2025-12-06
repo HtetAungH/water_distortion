@@ -27,5 +27,5 @@ Ensure you have Node.js installed.
 
 ### 2. Create Project (if not done)
 ```bash
-npm create vite@latest water-distortion -- --template react
-cd water-distortion
+npm create vite@latest waterdistortion -- --template react
+cd waterdistortion
